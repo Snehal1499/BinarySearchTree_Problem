@@ -72,7 +72,7 @@ namespace BinarySearch
             {
                 return false;
             }
-            if (this.NodeData.Equals(element))
+            else if (node.NodeData.Equals(element))
             {
                 Console.WriteLine("Found the Element in BST " + " " + node.NodeData);
                 return true;
@@ -85,7 +85,7 @@ namespace BinarySearch
             {
                 IfExist(element, node.LeftTree);
             }
-            if (element.CompareTo(node.NodeData) > 0)
+            else if (element.CompareTo(node.NodeData) > 0)
             {
                 IfExist(element, node.RightTree);
             }

@@ -22,6 +22,7 @@ namespace BinarySearch
             bst.Insert(67);
             bst.Display();
             bst.GetSize();
+            bst.IfExist(63, bst);
         }
     }
 }
